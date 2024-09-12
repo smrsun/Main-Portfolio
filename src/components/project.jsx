@@ -1,14 +1,15 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
-const project = ({ title, image, deployedLink, githubLink }) => {
+const Project = ({ title, image, deployedLink, githubLink }) => {
     return (
         <div className="project">
             <img src={image} alt={title} />
             <h3>{title}</h3>
-            <Link href={deployedLink} />
-            <Link href={githubLink} />
+            <a href={deployedLink} target="_blank" rel="noopener noreferrer">View Deployed</a>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">View GitHub</a>
         </div>
     );
 };
 
-export default project;
+export default Project;
