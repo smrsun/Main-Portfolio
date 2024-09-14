@@ -1,4 +1,4 @@
-src/styles/global.css
+/* src/styles/global.css */
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
   background-color: aquamarine;
 }
+
 a {
   text-decoration: none;
   color: black;
