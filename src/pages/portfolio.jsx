@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../components/projectd';
+import Project from '../components/project';
 
 const projects = [
     {
