@@ -1,27 +1,42 @@
 import React from 'react';
 import Project from '../components/project';
 
-const projects = [
-    {
-        title: 'project 1',
-        image: 'path/to/image1.png',
-        deployedLink: 'https://example.com/project1',
-        githubLink: 'https://github.com/smrsun/project1'
-    },
-    {
-        title: 'project 2',
-        image: 'path/to/image1.png',
-        deployedLink: 'https://example.com/project2',
-        githubLink: 'https://github.com/smrsun/project2'
-    },
-    {
-        title: 'project 3',
-        image: 'path/to/image1.png',
-        deployedLink: 'https://example.com/project3',
-        githubLink: 'https://github.com/smrsun/project3'
-    },
-    // Add more projects here
-];
+function Portfolio() {
+    const projects = [
+      {
+        title: 'Leafy Dreams',
+        image: '/src/assets/images/HomePageLeafyDreams.png',
+        deployedLink: 'https://leafy-dreams-zl5u.onrender.com',
+        repoLink: 'https://github.com/thomassmith0526/Leafy-Dreams',
+      },
+      {
+        title: 'Note Taker',
+        image: '/src/assets/images/NoteTaker.png',
+        deployedLink: 'https://notetaker-y9tn.onrender.com/',
+        repoLink: 'https://github.com/smrsun/noteTaker',
+      },
+      {
+        title: 'SVG Maker',
+        image: '/src/assets/images/SVGMaker.png',
+        repoLink: 'https://github.com/smrsun/svgMaker',
+      }
+      // Add more projects as needed
+    ];
+  
+    return (
+      <section id="portfolio">
+        {projects.map((project) => (
+          <Project
+            key={project.title}
+            title={project.title}
+            image={project.image}
+            deployedLink={project.deployedLink}
+            repoLink={project.repoLink}
+          />
+        ))}
+      </section>
+    );
+  };
 
 const Portfolio = () => {
     return (
