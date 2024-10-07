@@ -5,9 +5,15 @@ function Resume() {
         <section id="resume">
             <h1>Resume</h1>
             <div className="resume-content">
-                <div className="resume-download">
-                    <a href="/path-to-your-resume.pdf" download className="download-button">
+                <div className="resume-actions">
+                    {/* <a href="/assets/crystal_lisi_resume.pdf" download className="resume-button download-button">
                         Download Resume
+                    </a> */}
+                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:us:25f78cc7-d37d-4183-9127-ea2885a63dfe" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       className="resume-button view-button">
+                        View Resume
                     </a>
                 </div>
                 <div className="skills">
